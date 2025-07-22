@@ -1,0 +1,31 @@
+@media(min-width: 768px) {
+  .service-page-hero{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 8rem;
+  }
+
+  .service-page-hero-left{
+    width: 50%;
+  }
+
+  .service-page-hero-right{
+    width: 50%;
+  }
+
+  .service-page-hero-image{
+    position: absolute;
+    width: 50% ;
+    top: 205px;
+    left: 300px;
+  }
+
+  .service-page-hero-title{
+    font-size: 30px;
+  }
+
+  .service-page-hero-heading{
+    font-size: 45px;
+  }
+}
