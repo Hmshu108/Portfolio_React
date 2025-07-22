@@ -21,7 +21,7 @@ const Services = () => {
               <p className="font-bold">Brand Identity Design</p>
               <p className="opacity-50 text-xl">Lorem ipsum dolor sit.</p>
             </div>
-            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
+            <div className="service-item-circle w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
               #
             </div>
           </div>
@@ -31,7 +31,7 @@ const Services = () => {
               <p className="font-bold">Website Design</p>
               <p className="opacity-50 text-xl">Lorem ipsum dolor sit.</p>
             </div>
-            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
+            <div className="service-item-circle w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
               #
             </div>
           </div>
@@ -41,7 +41,7 @@ const Services = () => {
               <p className="font-bold">Mobile Application Design</p>
               <p className="opacity-50 text-xl">Lorem ipsum dolor sit.</p>
             </div>
-            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
+            <div className="service-item-circle w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
               #
             </div>
           </div>
@@ -51,7 +51,7 @@ const Services = () => {
               <p className="font-bold">Motion Graphics Design</p>
               <p className="opacity-50 text-xl">Lorem ipsum dolor sit.</p>
             </div>
-            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
+            <div className="service-item-circle w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
               #
             </div>
           </div>
@@ -62,7 +62,7 @@ const Services = () => {
               <p className="font-bold">Website Development</p>
               <p className="opacity-50 text-xl">Lorem ipsum dolor sit.</p>
             </div>
-            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
+            <div className="service-item-circle w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
               #
             </div>
           </div>
@@ -73,7 +73,7 @@ const Services = () => {
               <p className="font-bold">SEO & Digital Marketing</p>
               <p className="opacity-50 text-xl">Lorem ipsum dolor sit.</p>
             </div>
-            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
+            <div className="service-item-circle w-10 h-10 rounded-full flex justify-center items-center bg-black opacity-50">
               #
             </div>
           </div>

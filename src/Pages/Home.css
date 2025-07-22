@@ -187,6 +187,26 @@ li::before {
 
   .service-item {
     width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+  }
+
+  .service-item:hover {
+    border-color: #c9f31d;
+  }
+
+  .service-item-circle {
+    transition: all 0.3s ease;
+  }
+  .service-item:hover .service-item-circle {
+    background-color: #c9f31d;
+    opacity: 1;
+    color: black;
   }
 
   .skills {

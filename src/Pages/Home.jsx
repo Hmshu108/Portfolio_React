@@ -16,7 +16,6 @@ const Home = () => {
   return (
     <div>
       <div className="overflow-x-hidden  ">
-        
         {/* Hero Section */}
         <Hero />
 
