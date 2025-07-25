@@ -4,11 +4,18 @@ import telephone from "../assets/telephone.png";
 import about from "../assets/aboutImg.jpg";
 import btnImg1 from "../assets/btn-image1.png";
 import btnImg2 from "../assets/btn-image2.png";
+import { motion } from "motion/react";
 const About = () => {
   return (
     <section className="pt-24 px-[0.75rem] pb-24">
       <div className="about-me">
-        <div className="about-me-left mb-14">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="about-me-left mb-14"
+        >
           <div className="about-me-left-top mb-9">
             <h1 className="font-bold opacity-70 text-lg pb-4">About Me</h1>
             <p className="text-3xl leading-10 mb-6 font-medium">
@@ -60,8 +67,14 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="about-me-right relative">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="about-me-right relative"
+        >
           <div className=" flex justify-end pl-24">
             <img
               src={about}
@@ -69,15 +82,46 @@ const About = () => {
               className="about-me-image w-[320px] h-[266px] object-cover object-top rounded-xl"
             ></img>
           </div>
-          <div className="about-me-btn1 flex gap-2 items-center absolute bottom-24 left-4 py-2 px-4 bg-white rounded-full text-black">
+          <motion.div
+            initial={{
+              opacity: 0,
+              left: 100,
+            }}
+            whileInView={{
+              left: 16,
+              opacity: 1,
+              // right:200
+            }}
+            transition={{
+              delay: 0.3,
+              duration: 1,
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="about-me-btn1 flex gap-2 items-center absolute bottom-24 left-4 py-2 px-4 bg-white rounded-full text-black"
+          >
             <img src={btnImg1} alt="" className="w-6 h-6"></img>
             <h1 className="text-xl font-semibold">Experience Designer</h1>
-          </div>
-          <div className="about-me-btn2 flex gap-2 items-center absolute bottom-6 left-2 py-2 px-4 bg-white rounded-full text-black">
+          </motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              left: 100,
+            }}
+            whileInView={{
+              left: 1,
+              opacity: 1,
+            }}
+            transition={{
+              delay: 0.4,
+              duration: 1,
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="about-me-btn2 flex gap-2 items-center absolute bottom-6 left-2 py-2 px-4 bg-white rounded-full text-black"
+          >
             <img src={btnImg2} alt="" className="w-6 h-6"></img>
             <h1 className="text-xl font-semibold">Mark J. Collins</h1>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

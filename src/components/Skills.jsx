@@ -7,11 +7,29 @@ import angular from "../assets/skill5.png";
 import webflow from "../assets/skill6.png";
 import python from "../assets/skill7.png";
 import sketch from "../assets/skill8.png";
+import {motion} from "motion/react"
 const Skills = () => {
   return (
     <section className="pt-24">
       <div className="px-[0.75rem] skills">
-        <div className="skills-left skills-top flex flex-col gap-10 mb-14 ">
+        <motion.div 
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                delay: 0.3,
+                duration: 1,
+              }}
+              viewport={{
+                amount: 0.2,
+                once: true,
+              }}
+        className="skills-left skills-top flex flex-col gap-10 mb-14 ">
           <h1 className="font-semibold opacity-70 text-lg ">My Skills</h1>
           <h1 className="skills-heading text-3xl font-bold">
             Let's Explore Popular{" "}
@@ -26,9 +44,26 @@ const Skills = () => {
           <button className="py-2 px-6 font-bold bg-[#C9F31D] rounded-xl text-black w-[154px]">
             Learn More
           </button>
-        </div>
+        </motion.div>
 
-        <div className="skills-right flex flex-wrap gap-4 px-1.5 ">
+        <motion.div
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                delay: 0.3,
+                duration: 1,
+              }}
+              viewport={{
+                amount: 0.2,
+                once: true,
+              }}
+        className="skills-right flex flex-wrap gap-4 px-1.5 ">
           <div className="h-56 w-42 bg-[#1F1F1F] rounded-xl flex flex-col gap-6 justify-center items-center pb-2.5 pt-6 px-2.5">
             <img src={figma} alt="" />
             <h1 className="text-xl font-semibold">Figma</h1>
@@ -85,7 +120,7 @@ const Skills = () => {
               94%
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
