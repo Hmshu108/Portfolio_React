@@ -1,10 +1,29 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import { motion } from "motion/react";
 const Footer = () => {
   return (
     <section>
       <div className="footer px-[0.75rem] pt-18">
-        <div className="footer-top ">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.2,
+            ease: "linear",
+          }}
+          viewport={{
+            once: true,
+          }}
+          className="footer-top "
+        >
           <img className="footer-img" src={logo} alt="" />
           <div className="footer-left">
             <div className="footer-left-top mt-10">
@@ -41,9 +60,27 @@ const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="footer-bottom mt-24">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.2,
+            ease: "linear",
+          }}
+          viewport={{
+            once: true,
+          }}
+          className="footer-bottom mt-24"
+        >
           <p className=" opacity-80">
             Copyright @2025, Noxfolio All Rights Reserved
           </p>
@@ -53,7 +90,7 @@ const Footer = () => {
             <p>Instagram</p>
             <p>Linkedin</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
