@@ -20,7 +20,7 @@ const Clients = () => {
             y: 100,
           }}
           whileInView={{
-            opacity:1,
+            opacity: 1,
             y: 0,
           }}
           transition={{
@@ -41,12 +41,16 @@ const Clients = () => {
         <div className="client flex flex-wrap gap-8 mt-10 justify-center items-center ">
           <motion.img
             initial={{
-              opacity: 0,
+              opacity: 0.15,
               y: 100,
             }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
+            }}
+            whileHover={{
+              opacity: 1,
+
             }}
             transition={{
               duration: 1.1,
@@ -65,8 +69,12 @@ const Clients = () => {
               opacity: 0,
               y: 100,
             }}
+             whileHover={{
+              opacity: 1,
+              
+            }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
             }}
             transition={{
@@ -86,8 +94,12 @@ const Clients = () => {
               opacity: 0,
               y: 100,
             }}
+             whileHover={{
+              opacity: 1,
+              
+            }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
             }}
             transition={{
@@ -107,8 +119,12 @@ const Clients = () => {
               opacity: 0,
               y: 100,
             }}
+             whileHover={{
+              opacity: 1,
+              
+            }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
             }}
             transition={{
@@ -128,8 +144,12 @@ const Clients = () => {
               opacity: 0,
               y: 100,
             }}
+             whileHover={{
+              opacity: 1,
+              
+            }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
             }}
             transition={{
@@ -149,8 +169,12 @@ const Clients = () => {
               opacity: 0,
               y: 100,
             }}
+             whileHover={{
+              opacity: 1,
+              
+            }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
             }}
             transition={{
@@ -167,12 +191,16 @@ const Clients = () => {
           />
           <motion.img
             initial={{
-              opacity: 0,
+              opacity: 0.15,
               y: 100,
             }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
+            }}
+             whileHover={{
+              opacity: 1,
+              
             }}
             transition={{
               duration: 1.7,
@@ -188,12 +216,16 @@ const Clients = () => {
           />
           <motion.img
             initial={{
-              opacity: 0,
+              opacity: 0.15,
               y: 100,
             }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
+            }}
+             whileHover={{
+              opacity: 1,
+              
             }}
             transition={{
               duration: 1.8,
@@ -212,8 +244,12 @@ const Clients = () => {
               opacity: 0,
               y: 100,
             }}
+             whileHover={{
+              opacity: 1,
+              
+            }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
             }}
             transition={{
@@ -233,8 +269,12 @@ const Clients = () => {
               opacity: 0,
               y: 100,
             }}
+             whileHover={{
+              opacity: 1,
+              
+            }}
             whileInView={{
-              opacity:0.15,
+              opacity: 0.15,
               y: 0,
             }}
             transition={{
