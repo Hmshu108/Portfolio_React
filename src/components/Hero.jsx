@@ -3,21 +3,20 @@ import { motion } from "motion/react";
 const Hero = () => {
   return (
     <section>
-      <div className="hero  px-7 relative">
+      <div className="hero  px-7 relative ">
         <motion.div
-            initial={{
-          opacity:0
-         }}
-
-         animate={{
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
             y: -30,
-            opacity:1
+            opacity: 1,
           }}
           transition={{
             delay: 0.3,
             duration: 1,
           }}
-          className="hero-left  flex flex-col gap-10 mb-14 mx-auto"
+          className="hero-left   flex flex-col gap-10 mb-14 mx-auto"
         >
           <h1 className="hero-left-heading text-5xl flex flex-col gap-2">
             <span className=" opacity-35">Hello, i’m</span>
@@ -38,13 +37,12 @@ const Hero = () => {
           </div>
         </motion.div>
         <motion.div
-             initial={{
-          opacity:0
-         }}
-
-         animate={{
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
             y: -30,
-            opacity:1
+            opacity: 1,
           }}
           transition={{
             delay: 0.3,

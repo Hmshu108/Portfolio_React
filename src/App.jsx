@@ -8,7 +8,7 @@ import ContactUsPage from "./Pages/ContactUsPage";
 
 const App = () => {
   return (
-    <div className="bg-[#131313] text-white">
+    <div className="bg-[#131313] text-white ">
       <BrowserRouter>
         <Header />
         <Routes>

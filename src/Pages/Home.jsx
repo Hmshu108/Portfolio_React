@@ -15,7 +15,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div>
-      <div className="overflow-x-hidden  ">
+      <div className="overflow-x-hidden overflow-y-hidden  ">
         {/* Hero Section */}
         <Hero />
 
